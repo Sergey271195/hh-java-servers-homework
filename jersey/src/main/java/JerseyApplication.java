@@ -1,6 +1,7 @@
-public class JerseyApplication {
+import application.EmbeddedServer;
 
-  public static void main(String[] args) {
-    // run, Jetty, run!
+public class JerseyApplication {
+  public static void main(String[] args) throws Exception {
+    new EmbeddedServer().run();
   }
 }
